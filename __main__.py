@@ -3,12 +3,20 @@
   
   
 from program1 import return_divisible_num
-
 def main():
-  list1 = []
-  for j in return_divisible_num(100):
-      list1.append(j)
-  return list1
+    list1 = []
+    # open a file
+    file1 = open("input.txt", "r")
+
+    # read the file
+    input = file1.read()
+    print(read_content)
+
+    # close the file
+    file1.close()
+    for j in return_divisible_num(int(input)):
+        list1.append(j)
+  print(list1)
     
 
 
